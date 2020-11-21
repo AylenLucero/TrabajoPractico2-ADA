@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP-2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: antiquewhite;
+            color: cornsilk;
+            font-family: 'Lucida Sans';
+        }
+        .centro {
+            background-color: rgb(145, 29, 64);
+            filter: drop-shadow(5px 5px 8px rgb(206, 57, 102));
+            margin-top: 12%;
+        }
+        li {
+            background-color: rgb(145, 29, 64) !important;
+        }
+        li:hover {
+            background-color: rgb(206, 57, 102) !important;
+        }
+        .local {
+            margin-top: 25%;
+        }
+        .render {
+            background-color: rgb(145, 29, 64); 
+            filter: drop-shadow(5px 5px 8px rgb(206, 57, 102));
+            transform: ro;
+        }
+    </style>
+</head>
+<body class="container">
+    <article>
+        <section class="row d-flex justify-content-center ">
+            <div class="col-10 centro border border-secondary rounded">
+                <div class="row text-center">
+                    <h1 class="col py-3 bg-dark">
+                        Trabajo practico N°2
+                    </h1>
+                </div>
+                <div class="row text-center d-flex justify-content-center mb-3">
+                    <div class="col">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><h4>ADA</h4></li>
+                            <li class="list-group-item">Nombre: Aylen Camila Lucero Lyonnet</li>
+                            <li class="list-group-item">DNI: 40653615</li>
+                            <li class="list-group-item">
+                                Ingrese al local de ventas de PCs
+                                <a href="#local"><button type="button" class="btn btn-secondary">
+                                    Secondary
+                                </button></a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="local rounded mb-5 pb-5 bg-dark">           
+            <div class="row" id="local">
+                <h2 class="col-6  d-flex justify-content-center pt-4">Local de ventas de PC online</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary col-3 mt-5" onclick="renderPorMes();">
+                            Ventas mes
+                        </button>
+                    </div>
+                    <div class="row d-flex justify-content-center" id="ventasMensuales">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row  d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary col-3 mt-5" onclick="renderPorSucursal();">
+                            Ventas sucursales
+                        </button>
+                    </div>
+                    <div class=" d-flex justify-content-center" id="ventasSucursales">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row d-flex justify-content-center">                   
+                        <button type="button" class="btn btn-secondary col-3 mt-5" onclick="render();">
+                            Reporte
+                        </button>
+                    </div> 
+                    <div id="reporte">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </article>
+    <script src="infoPC.js"></script>
+    <script src="/consignas/consigna1.js"></script>
+    <script src="/consignas/consigna2.js"></script>
+    <script src="consignas/consigna3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
