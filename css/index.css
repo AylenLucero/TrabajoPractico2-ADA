@@ -1,0 +1,36 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans';
+    font-weight: 800;
+}
+.presentacion {           
+    color: cornsilk; 
+}
+.centro {
+    background-color: rgb(145, 29, 64);
+    filter: drop-shadow(5px 5px 8px rgb(206, 57, 102));
+    margin-top: 12%;
+}
+li {
+    background-color: rgb(145, 29, 64) !important;
+}
+li:hover {
+    background-color: rgb(206, 57, 102) !important;
+}
+.local {
+    margin-top: 25%;
+}
+.render {
+    background-color: rgb(145, 29, 64); 
+    filter: drop-shadow(5px 5px 8px rgb(206, 57, 102));
+}
+.dato {
+    background-color: rgb(145, 29, 64); 
+    color: cornsilk;
+}
+.dato:hover {
+    filter: drop-shadow(5px 5px 8px rgb(206, 57, 102)); 
+}
+article {
+    margin-bottom: 200px;
+}
